@@ -65,6 +65,7 @@
 
       html {
         scroll-behavior: smooth;
+        scroll-padding-top: 7rem;
       }
 
       body {
@@ -95,22 +96,24 @@
       .cat-ears::after {
         content: "";
         position: absolute;
-        top: -18px;
-        width: 42px;
-        height: 48px;
-        background: #d4b896;
-        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-        filter: drop-shadow(0 6px 8px rgba(74, 52, 36, 0.25));
+        top: -22px;
+        width: 46px;
+        height: 54px;
+        background:
+          linear-gradient(#e8b4b0 0 0) 50% 62% / 18px 22px no-repeat,
+          linear-gradient(#c9a882, #a67c52);
+        clip-path: polygon(50% 6%, 4% 100%, 96% 100%);
+        filter: drop-shadow(0 8px 8px rgba(74, 52, 36, 0.28));
       }
 
       .cat-ears::before {
-        left: 18px;
-        transform: rotate(-18deg);
+        left: 16px;
+        transform: rotate(-20deg);
       }
 
       .cat-ears::after {
-        right: 18px;
-        transform: rotate(18deg);
+        right: 16px;
+        transform: rotate(20deg);
       }
 
       .gold-ring {
@@ -235,7 +238,7 @@
               <img src="x.png" alt="X" class="h-5 w-5 object-contain" />
             </a>
             <a
-              href="https://flap.sh/bnb/TBA"
+              href="https://flap.sh/bnb/0x1e4d300df4a4a03223a21495abd32a93e8627777"
               target="_blank"
               rel="noopener noreferrer"
               class="rounded-full bg-binance-black px-4 sm:px-5 py-2.5 font-cat text-sm font-bold text-binance-yellow shadow-glow hover:bg-fur-whisker transition"
@@ -301,7 +304,7 @@
                 Contract Address
               </p>
               <p id="caValue" class="truncate font-body text-lg font-extrabold text-fur-espresso">
-                TBA
+                0x1e4d300df4a4a03223a21495abd32a93e8627777
               </p>
             </div>
             <button
@@ -314,7 +317,7 @@
 
           <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
             <a
-              href="https://flap.sh/bnb/TBA"
+              href="https://flap.sh/bnb/0x1e4d300df4a4a03223a21495abd32a93e8627777"
               target="_blank"
               rel="noopener noreferrer"
               class="shimmer rounded-full bg-gradient-to-r from-binance-black via-fur-whisker to-binance-black px-8 py-4 font-cat text-lg font-bold text-binance-yellow shadow-glow hover:scale-105 transition"
@@ -322,7 +325,7 @@
               🐾 Buy Now
             </a>
             <a
-              href="https://dexscreener.com/bsc/TBA"
+              href="https://dexscreener.com/bsc/0x1e4d300df4a4a03223a21495abd32a93e8627777"
               target="_blank"
               rel="noopener noreferrer"
               class="rounded-full border-4 border-fur-cream bg-binance-yellow px-8 py-3.5 font-cat text-lg font-bold text-fur-espresso hover:bg-fur-cream transition"
@@ -349,7 +352,7 @@
         </div>
       </div>
 
-      <section id="about" class="paw-scatter relative py-20 sm:py-24">
+      <section id="about" class="paw-scatter relative scroll-mt-28 py-20 sm:py-24">
         <div class="mx-auto max-w-6xl px-4 sm:px-6">
           <div class="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
             <div class="relative">
@@ -390,7 +393,7 @@
                 </div>
                 <div class="rounded-2xl bg-binance-yellow p-3 text-center border-2 border-fur-espresso">
                   <p class="font-cat text-xs font-bold text-fur-mocha">CA</p>
-                  <p class="font-display text-lg text-fur-espresso">TBA</p>
+                  <p class="font-display text-lg text-fur-espresso">0x1e4d300df4a4a03223a21495abd32a93e8627777</p>
                 </div>
               </div>
             </div>
@@ -398,7 +401,7 @@
         </div>
       </section>
 
-      <section id="howtobuy" class="relative pb-20">
+      <section id="howtobuy" class="relative scroll-mt-28 pb-20">
         <div class="mx-auto max-w-6xl px-4 sm:px-6">
           <div class="mb-12 text-center">
             <p class="font-cat text-sm font-bold uppercase tracking-[0.35em] text-fur-espresso">
@@ -413,8 +416,8 @@
           <div class="grid gap-5 md:grid-cols-2">
             <article class="step-card rounded-[1.8rem] border-4 border-fur-espresso bg-fur-cream p-6 sm:p-8 shadow-paw transition hover:-translate-y-1">
               <div class="flex items-start gap-4">
-                <div class="step-paw flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-binance-yellow text-3xl transition">
-                  👛
+                <div class="step-paw flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-2xl bg-binance-yellow font-display text-2xl text-fur-espresso transition">
+                  1
                 </div>
                 <div>
                   <p class="font-display text-sm text-fur-mocha">Step 01</p>
@@ -429,8 +432,8 @@
 
             <article class="step-card rounded-[1.8rem] border-4 border-fur-espresso bg-fur-cream p-6 sm:p-8 shadow-paw transition hover:-translate-y-1">
               <div class="flex items-start gap-4">
-                <div class="step-paw flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-binance-yellow text-3xl transition">
-                  🟡
+                <div class="step-paw flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-2xl bg-binance-yellow font-display text-2xl text-fur-espresso transition">
+                  2
                 </div>
                 <div>
                   <p class="font-display text-sm text-fur-mocha">Step 02</p>
@@ -445,8 +448,8 @@
 
             <article class="step-card rounded-[1.8rem] border-4 border-fur-espresso bg-fur-cream p-6 sm:p-8 shadow-paw transition hover:-translate-y-1">
               <div class="flex items-start gap-4">
-                <div class="step-paw flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-binance-yellow text-3xl transition">
-                  🔗
+                <div class="step-paw flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-2xl bg-binance-yellow font-display text-2xl text-fur-espresso transition">
+                  3
                 </div>
                 <div>
                   <p class="font-display text-sm text-fur-mocha">Step 03</p>
@@ -461,8 +464,8 @@
 
             <article class="step-card rounded-[1.8rem] border-4 border-fur-espresso bg-fur-cream p-6 sm:p-8 shadow-paw transition hover:-translate-y-1">
               <div class="flex items-start gap-4">
-                <div class="step-paw flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-binance-yellow text-3xl transition">
-                  🐱
+                <div class="step-paw flex h-16 w-16 shrink-0 flex-col items-center justify-center rounded-2xl bg-binance-yellow font-display text-2xl text-fur-espresso transition">
+                  4
                 </div>
                 <div>
                   <p class="font-display text-sm text-fur-mocha">Step 04</p>
@@ -478,7 +481,7 @@
 
           <div class="mt-10 flex flex-wrap justify-center gap-4">
             <a
-              href="https://flap.sh/bnb/TBA"
+              href="https://flap.sh/bnb/0x1e4d300df4a4a03223a21495abd32a93e8627777"
               target="_blank"
               rel="noopener noreferrer"
               class="rounded-full bg-binance-black px-8 py-4 font-cat text-lg font-bold text-binance-yellow shadow-glow hover:scale-105 transition"
@@ -495,7 +498,7 @@
         </div>
       </section>
 
-      <section id="chart" class="pb-24">
+      <section id="chart" class="scroll-mt-28 pb-24">
         <div class="mx-auto max-w-6xl px-4 sm:px-6">
           <div class="mb-8 flex flex-col items-center justify-between gap-4 sm:flex-row">
             <div>
@@ -505,7 +508,7 @@
               <h2 class="font-display text-4xl sm:text-5xl text-fur-espresso">$CZ Chart</h2>
             </div>
             <a
-              href="https://dexscreener.com/bsc/TBA"
+              href="https://dexscreener.com/bsc/0x1e4d300df4a4a03223a21495abd32a93e8627777"
               target="_blank"
               rel="noopener noreferrer"
               class="rounded-full bg-fur-cream px-6 py-3 font-cat font-bold text-fur-espresso border-4 border-fur-espresso hover:bg-binance-black hover:text-binance-yellow transition"
@@ -516,7 +519,7 @@
           <div class="overflow-hidden rounded-[2rem] border-8 border-fur-espresso bg-binance-black shadow-paw">
             <iframe
               title="CATZ Dexscreener chart"
-              src="https://dexscreener.com/bsc/TBA?embed=1&loadChartSettings=0&trades=1&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
+              src="https://dexscreener.com/bsc/0x1e4d300df4a4a03223a21495abd32a93e8627777?embed=1&loadChartSettings=0&trades=1&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
               class="h-[560px] w-full bg-binance-black"
             ></iframe>
           </div>
@@ -550,33 +553,45 @@
 
     <div
       id="toast"
-      class="pointer-events-none fixed bottom-6 left-1/2 z-[60] -translate-x-1/2 rounded-full bg-binance-black px-5 py-3 font-cat font-bold text-binance-yellow opacity-0 shadow-glow transition"
+      class="pointer-events-none fixed bottom-8 left-1/2 z-[80] -translate-x-1/2 rounded-full border-2 border-binance-yellow bg-binance-black px-6 py-3 font-cat font-bold text-binance-yellow opacity-0 shadow-glow transition duration-300"
     >
       CA copied. Now go pounce.
     </div>
 
     <script>
-      const CA = "TBA";
+      const CA = "0x1e4d300df4a4a03223a21495abd32a93e8627777";
       const toast = document.getElementById("toast");
       const menuBtn = document.getElementById("menuBtn");
       const mobileMenu = document.getElementById("mobileMenu");
 
-      async function copyCA() {
-        try {
-          await navigator.clipboard.writeText(CA);
-        } catch (err) {
-          const area = document.createElement("textarea");
-          area.value = CA;
-          document.body.appendChild(area);
-          area.select();
-          document.execCommand("copy");
-          area.remove();
+      function fallbackCopy() {
+        const area = document.createElement("textarea");
+        area.value = CA;
+        area.setAttribute("readonly", "");
+        area.style.position = "fixed";
+        area.style.left = "-9999px";
+        document.body.appendChild(area);
+        area.select();
+        document.execCommand("copy");
+        area.remove();
+      }
+
+      function copyCA(event) {
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(CA).catch(fallbackCopy);
+        } else {
+          fallbackCopy();
         }
+
         toast.classList.remove("opacity-0");
         toast.classList.add("opacity-100");
+        const btn = event?.currentTarget;
+        const original = btn ? btn.textContent : "";
+        if (btn) btn.textContent = "Copied!";
         setTimeout(() => {
           toast.classList.add("opacity-0");
           toast.classList.remove("opacity-100");
+          if (btn) btn.textContent = original;
         }, 1800);
       }
 
