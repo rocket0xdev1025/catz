@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CATZ | $CZ — CZ-Inspired Feline Energy on BNB</title>
+    <meta
+      name="description"
+      content="CATZ brings CZ-inspired crypto energy, sharp memes, and unstoppable feline vibes—ready to pounce into the blockchain jungle and chase the moon!"
+    />
+    <link rel="icon" href="logo.png" />
+    <meta property="og:title" content="CATZ | $CZ" />
+    <meta
+      property="og:description"
+      content="CZ-inspired crypto energy, sharp memes, and unstoppable feline vibes on BNB Chain."
+    />
+    <meta property="og:image" content="banner.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Fredoka:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              binance: {
+                yellow: "#F0B90B",
+                gold: "#F3BA2F",
+                bright: "#FCD535",
+                deep: "#C99408",
+                black: "#0B0E11",
+                ink: "#1A1A1A",
+              },
+              fur: {
+                cream: "#F6EBD8",
+                foam: "#FFF8EC",
+                tan: "#D4B896",
+                mocha: "#A67C52",
+                espresso: "#4A3424",
+                whisker: "#2C2118",
+              },
+            },
+            fontFamily: {
+              display: ["Bungee", "cursive"],
+              cat: ["Fredoka", "sans-serif"],
+              body: ["Outfit", "sans-serif"],
+            },
+            boxShadow: {
+              paw: "0 18px 40px rgba(74, 52, 36, 0.28)",
+              glow: "0 0 40px rgba(240, 185, 11, 0.45)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        --binance: #f0b90b;
+        --fur: #f6ebd8;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background-color: #f0b90b;
+        color: #4a3424;
+      }
+
+      .diamond-field {
+        background-color: #f0b90b;
+        background-image:
+          radial-gradient(circle at 12% 18%, rgba(252, 213, 53, 0.85), transparent 32%),
+          radial-gradient(circle at 88% 8%, rgba(201, 148, 8, 0.55), transparent 28%),
+          radial-gradient(circle at 80% 78%, rgba(252, 213, 53, 0.5), transparent 34%),
+          url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd' opacity='0.16'%3E%3Cpath d='M80 18l18 18-18 18-18-18zM80 106l18 18-18 18-18-18zM18 80l18 18-18 18-18-18zM142 80l18 18-18 18-18-18z' stroke='%230B0E11' stroke-width='2'/%3E%3Cpath d='M80 48l14 14-14 14-14-14z' fill='%230B0E11' fill-opacity='0.12'/%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      .paw-scatter {
+        background-image: url("data:image/svg+xml,%3Csvg width='90' height='90' viewBox='0 0 90 90' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234A3424' fill-opacity='0.07'%3E%3Ccircle cx='28' cy='22' r='6'/%3E%3Ccircle cx='46' cy='16' r='5.5'/%3E%3Ccircle cx='62' cy='24' r='6'/%3E%3Cellipse cx='46' cy='42' rx='14' ry='11'/%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      .hero-overlay {
+        background:
+          linear-gradient(180deg, rgba(11, 14, 17, 0.28) 0%, rgba(11, 14, 17, 0.55) 46%, rgba(240, 185, 11, 0.92) 100%),
+          radial-gradient(circle at 78% 42%, rgba(240, 185, 11, 0.25), transparent 36%);
+      }
+
+      .cat-ears::before,
+      .cat-ears::after {
+        content: "";
+        position: absolute;
+        top: -18px;
+        width: 42px;
+        height: 48px;
+        background: #d4b896;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        filter: drop-shadow(0 6px 8px rgba(74, 52, 36, 0.25));
+      }
+
+      .cat-ears::before {
+        left: 18px;
+        transform: rotate(-18deg);
+      }
+
+      .cat-ears::after {
+        right: 18px;
+        transform: rotate(18deg);
+      }
+
+      .gold-ring {
+        box-shadow:
+          0 0 0 6px #fcd535,
+          0 0 0 12px #4a3424,
+          0 20px 50px rgba(11, 14, 17, 0.45);
+      }
+
+      .marquee-track {
+        animation: marquee 28s linear infinite;
+      }
+
+      .float-y {
+        animation: floaty 5.5s ease-in-out infinite;
+      }
+
+      .float-slow {
+        animation: floaty 7s ease-in-out infinite;
+      }
+
+      .shimmer {
+        background-size: 200% 100%;
+        animation: shimmer 2.8s linear infinite;
+      }
+
+      .paw-float {
+        animation: rise 14s linear infinite;
+      }
+
+      .whisker {
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #4a3424, transparent);
+      }
+
+      @keyframes marquee {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
+
+      @keyframes floaty {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-12px);
+        }
+      }
+
+      @keyframes shimmer {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 200% 50%;
+        }
+      }
+
+      @keyframes rise {
+        0% {
+          transform: translateY(20px) rotate(0deg);
+          opacity: 0;
+        }
+        12% {
+          opacity: 0.18;
+        }
+        100% {
+          transform: translateY(-110vh) rotate(28deg);
+          opacity: 0;
+        }
+      }
+
+      .step-card:hover .step-paw {
+        transform: scale(1.08) rotate(-8deg);
+      }
+    </style>
+  </head>
+  <body class="diamond-field font-body antialiased overflow-x-hidden">
+    <div class="pointer-events-none fixed inset-0 overflow-hidden z-0" aria-hidden="true">
+      <span class="paw-float absolute left-[8%] bottom-[-10%] text-4xl">🐾</span>
+      <span class="paw-float absolute left-[28%] bottom-[-20%] text-5xl" style="animation-delay: 3s">🐾</span>
+      <span class="paw-float absolute left-[62%] bottom-[-8%] text-3xl" style="animation-delay: 6s">🐾</span>
+      <span class="paw-float absolute left-[84%] bottom-[-16%] text-4xl" style="animation-delay: 9s">🐾</span>
+    </div>
+
+    <header class="sticky top-0 z-50">
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
+        <div
+          class="flex items-center justify-between rounded-full border-4 border-fur-espresso bg-fur-cream/95 px-3 py-2 shadow-paw backdrop-blur"
+        >
+          <a href="#top" class="flex items-center gap-3 pl-1">
+            <img
+              src="logo.png"
+              alt="CATZ logo"
+              class="h-12 w-12 rounded-full border-2 border-binance-yellow object-cover"
+            />
+            <div class="leading-none">
+              <p class="font-display text-xl tracking-wide text-fur-espresso">CATZ</p>
+              <p class="font-cat text-xs font-semibold text-fur-mocha">$CZ on BNB</p>
+            </div>
+          </a>
+
+          <div class="hidden md:flex items-center gap-7 font-cat font-semibold text-fur-espresso">
+            <a href="#about" class="hover:text-binance-deep transition">About</a>
+            <a href="#howtobuy" class="hover:text-binance-deep transition">How to Buy</a>
+            <a href="#chart" class="hover:text-binance-deep transition">Chart</a>
+          </div>
+
+          <div class="flex items-center gap-2 sm:gap-3">
+            <a
+              href="https://x.com/CATZbsc"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex h-11 w-11 items-center justify-center rounded-full bg-binance-black hover:scale-105 transition"
+              aria-label="CATZ on X"
+            >
+              <img src="x.png" alt="X" class="h-5 w-5 object-contain" />
+            </a>
+            <a
+              href="https://flap.sh/bnb/TBA"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-full bg-binance-black px-4 sm:px-5 py-2.5 font-cat text-sm font-bold text-binance-yellow shadow-glow hover:bg-fur-whisker transition"
+            >
+              Buy Now
+            </a>
+            <button
+              id="menuBtn"
+              class="md:hidden flex h-11 w-11 items-center justify-center rounded-full border-2 border-fur-espresso text-fur-espresso"
+              aria-label="Open menu"
+            >
+              ☰
+            </button>
+          </div>
+        </div>
+        <div
+          id="mobileMenu"
+          class="md:hidden hidden mt-2 rounded-3xl border-4 border-fur-espresso bg-fur-cream p-4 font-cat font-semibold"
+        >
+          <a href="#about" class="block py-2">About</a>
+          <a href="#howtobuy" class="block py-2">How to Buy</a>
+          <a href="#chart" class="block py-2">Chart</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top" class="relative z-10">
+      <section class="relative min-h-[92vh] overflow-hidden">
+        <img
+          src="banner.jpg"
+          alt="CATZ banner"
+          class="absolute inset-0 h-full w-full object-cover object-center"
+        />
+        <div class="hero-overlay absolute inset-0"></div>
+
+        <div class="relative mx-auto flex min-h-[92vh] max-w-5xl flex-col items-center justify-center px-4 pb-16 pt-10 text-center">
+          <div class="cat-ears relative mb-7 float-y">
+            <img
+              src="logo.png"
+              alt="CATZ CZ cat"
+              class="gold-ring h-40 w-40 sm:h-52 sm:w-52 rounded-full object-cover"
+            />
+          </div>
+
+          <p class="font-cat text-sm sm:text-base font-semibold tracking-[0.35em] text-binance-bright uppercase">
+            BNB Chain • Feline Reserve
+          </p>
+          <h1 class="mt-3 font-display text-6xl sm:text-8xl text-fur-cream drop-shadow-[0_6px_0_#4A3424]">
+            CATZ
+          </h1>
+          <p class="font-cat mt-1 text-3xl sm:text-4xl font-bold text-binance-yellow">$CZ</p>
+          <div class="whisker mx-auto mt-5 w-40 rounded-full"></div>
+          <p class="mt-6 max-w-3xl font-cat text-lg sm:text-2xl font-medium leading-relaxed text-fur-cream">
+            CATZ brings CZ-inspired crypto energy, sharp memes, and unstoppable feline
+            vibes—ready to pounce into the blockchain jungle and chase the moon!
+          </p>
+
+          <div
+            class="mt-8 flex w-full max-w-2xl flex-col items-stretch gap-3 rounded-2xl border-4 border-fur-espresso bg-fur-cream p-3 sm:flex-row sm:items-center"
+          >
+            <div class="flex-1 text-left px-2">
+              <p class="font-cat text-xs font-bold uppercase tracking-widest text-fur-mocha">
+                Contract Address
+              </p>
+              <p id="caValue" class="truncate font-body text-lg font-extrabold text-fur-espresso">
+                TBA
+              </p>
+            </div>
+            <button
+              id="copyBtn"
+              class="rounded-xl bg-binance-black px-5 py-3 font-cat font-bold text-binance-yellow hover:scale-[1.02] transition"
+            >
+              Copy CA
+            </button>
+          </div>
+
+          <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+            <a
+              href="https://flap.sh/bnb/TBA"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="shimmer rounded-full bg-gradient-to-r from-binance-black via-fur-whisker to-binance-black px-8 py-4 font-cat text-lg font-bold text-binance-yellow shadow-glow hover:scale-105 transition"
+            >
+              🐾 Buy Now
+            </a>
+            <a
+              href="https://dexscreener.com/bsc/TBA"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-full border-4 border-fur-cream bg-binance-yellow px-8 py-3.5 font-cat text-lg font-bold text-fur-espresso hover:bg-fur-cream transition"
+            >
+              📈 Chart
+            </a>
+            <a
+              href="https://x.com/CATZbsc"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center gap-2 rounded-full bg-fur-cream px-6 py-3.5 font-cat text-lg font-bold text-fur-espresso border-4 border-fur-espresso hover:bg-binance-black hover:text-fur-cream transition"
+            >
+              <img src="x.png" alt="" class="h-5 w-5 rounded-sm bg-black object-contain" />
+              Follow
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="relative z-20 -mt-2 overflow-hidden border-y-4 border-fur-espresso bg-binance-black py-3">
+        <div class="marquee-track flex w-max gap-10 whitespace-nowrap font-cat text-lg font-semibold text-binance-yellow">
+          <span>🐾 CATZ</span><span>$CZ</span><span>BNB CHAIN</span><span>CZ ENERGY</span><span>SHARP MEMES</span><span>CHASE THE MOON</span><span>FELINE VIBES</span><span>POUNCE READY</span>
+          <span>🐾 CATZ</span><span>$CZ</span><span>BNB CHAIN</span><span>CZ ENERGY</span><span>SHARP MEMES</span><span>CHASE THE MOON</span><span>FELINE VIBES</span><span>POUNCE READY</span>
+        </div>
+      </div>
+
+      <section id="about" class="paw-scatter relative py-20 sm:py-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
+            <div class="relative">
+              <div class="absolute -left-4 -top-4 h-24 w-24 rounded-full bg-binance-bright/70 blur-2xl"></div>
+              <img
+                src="logo.png"
+                alt="CATZ mascot"
+                class="relative w-full max-w-md mx-auto rounded-[2.5rem] border-8 border-fur-espresso object-cover shadow-paw float-slow"
+              />
+            </div>
+            <div class="rounded-[2rem] border-4 border-fur-espresso bg-fur-cream p-8 sm:p-10 shadow-paw">
+              <p class="font-cat text-sm font-bold uppercase tracking-[0.3em] text-fur-mocha">
+                The Jungle Brief
+              </p>
+              <h2 class="font-display mt-2 text-4xl sm:text-5xl text-fur-espresso">Meet CATZ</h2>
+              <div class="whisker mt-4 w-28 rounded-full"></div>
+              <p class="mt-6 text-lg leading-relaxed text-fur-espresso">
+                CATZ brings CZ-inspired crypto energy, sharp memes, and unstoppable feline
+                vibes—ready to pounce into the blockchain jungle and chase the moon!
+              </p>
+              <p class="mt-4 text-lg leading-relaxed text-fur-mocha">
+                Born from Binance gold and nine lives of hustle, $CZ is the cat in glasses who
+                already packed a polo for the next all-time high. No slow stalks — just clean
+                claws, louder memes, and a pride that never taps out.
+              </p>
+              <div class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                <div class="rounded-2xl bg-binance-yellow p-3 text-center border-2 border-fur-espresso">
+                  <p class="font-cat text-xs font-bold text-fur-mocha">Name</p>
+                  <p class="font-display text-lg text-fur-espresso">CATZ</p>
+                </div>
+                <div class="rounded-2xl bg-binance-yellow p-3 text-center border-2 border-fur-espresso">
+                  <p class="font-cat text-xs font-bold text-fur-mocha">Symbol</p>
+                  <p class="font-display text-lg text-fur-espresso">CZ</p>
+                </div>
+                <div class="rounded-2xl bg-binance-yellow p-3 text-center border-2 border-fur-espresso">
+                  <p class="font-cat text-xs font-bold text-fur-mocha">Chain</p>
+                  <p class="font-display text-lg text-fur-espresso">BNB</p>
+                </div>
+                <div class="rounded-2xl bg-binance-yellow p-3 text-center border-2 border-fur-espresso">
+                  <p class="font-cat text-xs font-bold text-fur-mocha">CA</p>
+                  <p class="font-display text-lg text-fur-espresso">TBA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="howtobuy" class="relative pb-20">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="mb-12 text-center">
+            <p class="font-cat text-sm font-bold uppercase tracking-[0.35em] text-fur-espresso">
+              Four Pounces
+            </p>
+            <h2 class="font-display mt-2 text-4xl sm:text-6xl text-fur-espresso">How to Buy</h2>
+            <p class="mx-auto mt-4 max-w-2xl font-cat text-lg text-fur-espresso/80">
+              Grab $CZ with BNB in four quick steps. Wallet on. Claws out. Moon in sight.
+            </p>
+          </div>
+
+          <div class="grid gap-5 md:grid-cols-2">
+            <article class="step-card rounded-[1.8rem] border-4 border-fur-espresso bg-fur-cream p-6 sm:p-8 shadow-paw transition hover:-translate-y-1">
+              <div class="flex items-start gap-4">
+                <div class="step-paw flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-binance-yellow text-3xl transition">
+                  👛
+                </div>
+                <div>
+                  <p class="font-display text-sm text-fur-mocha">Step 01</p>
+                  <h3 class="font-cat text-2xl font-bold text-fur-espresso">Get a Wallet</h3>
+                  <p class="mt-2 text-fur-espresso/80">
+                    Install MetaMask or Trust Wallet. Add BNB Smart Chain so your feline vault
+                    is ready for $CZ.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="step-card rounded-[1.8rem] border-4 border-fur-espresso bg-fur-cream p-6 sm:p-8 shadow-paw transition hover:-translate-y-1">
+              <div class="flex items-start gap-4">
+                <div class="step-paw flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-binance-yellow text-3xl transition">
+                  🟡
+                </div>
+                <div>
+                  <p class="font-display text-sm text-fur-mocha">Step 02</p>
+                  <h3 class="font-cat text-2xl font-bold text-fur-espresso">Fuel Up with BNB</h3>
+                  <p class="mt-2 text-fur-espresso/80">
+                    Buy BNB and send it to your wallet. That’s the golden milk that powers every
+                    swap on BNB Chain.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="step-card rounded-[1.8rem] border-4 border-fur-espresso bg-fur-cream p-6 sm:p-8 shadow-paw transition hover:-translate-y-1">
+              <div class="flex items-start gap-4">
+                <div class="step-paw flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-binance-yellow text-3xl transition">
+                  🔗
+                </div>
+                <div>
+                  <p class="font-display text-sm text-fur-mocha">Step 03</p>
+                  <h3 class="font-cat text-2xl font-bold text-fur-espresso">Open Flap.sh</h3>
+                  <p class="mt-2 text-fur-espresso/80">
+                    Hit Buy Now, connect your wallet, and land on the official CATZ pool. Always
+                    double-check the CA.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="step-card rounded-[1.8rem] border-4 border-fur-espresso bg-fur-cream p-6 sm:p-8 shadow-paw transition hover:-translate-y-1">
+              <div class="flex items-start gap-4">
+                <div class="step-paw flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-binance-yellow text-3xl transition">
+                  🐱
+                </div>
+                <div>
+                  <p class="font-display text-sm text-fur-mocha">Step 04</p>
+                  <h3 class="font-cat text-2xl font-bold text-fur-espresso">Swap BNB for $CZ</h3>
+                  <p class="mt-2 text-fur-espresso/80">
+                    Swap your BNB for CATZ, confirm the pounce, and welcome to the pride. The
+                    jungle is waiting.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="mt-10 flex flex-wrap justify-center gap-4">
+            <a
+              href="https://flap.sh/bnb/TBA"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-full bg-binance-black px-8 py-4 font-cat text-lg font-bold text-binance-yellow shadow-glow hover:scale-105 transition"
+            >
+              Buy $CZ Now
+            </a>
+            <button
+              id="copyBtn2"
+              class="rounded-full border-4 border-fur-espresso bg-fur-cream px-8 py-3.5 font-cat text-lg font-bold text-fur-espresso hover:bg-binance-black hover:text-binance-yellow transition"
+            >
+              Copy CA
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="chart" class="pb-24">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6">
+          <div class="mb-8 flex flex-col items-center justify-between gap-4 sm:flex-row">
+            <div>
+              <p class="font-cat text-sm font-bold uppercase tracking-[0.3em] text-fur-espresso">
+                Live Jungle
+              </p>
+              <h2 class="font-display text-4xl sm:text-5xl text-fur-espresso">$CZ Chart</h2>
+            </div>
+            <a
+              href="https://dexscreener.com/bsc/TBA"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-full bg-fur-cream px-6 py-3 font-cat font-bold text-fur-espresso border-4 border-fur-espresso hover:bg-binance-black hover:text-binance-yellow transition"
+            >
+              Open Dexscreener
+            </a>
+          </div>
+          <div class="overflow-hidden rounded-[2rem] border-8 border-fur-espresso bg-binance-black shadow-paw">
+            <iframe
+              title="CATZ Dexscreener chart"
+              src="https://dexscreener.com/bsc/TBA?embed=1&loadChartSettings=0&trades=1&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
+              class="h-[560px] w-full bg-binance-black"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="relative z-10 border-t-4 border-fur-espresso bg-binance-black">
+      <div class="mx-auto flex max-w-6xl flex-col items-center gap-5 px-4 py-10 text-center sm:flex-row sm:justify-between sm:text-left">
+        <div class="flex items-center gap-3">
+          <img src="logo.png" alt="" class="h-12 w-12 rounded-full object-cover border-2 border-binance-yellow" />
+          <div>
+            <p class="font-display text-xl text-binance-yellow">CATZ</p>
+            <p class="font-cat text-sm text-fur-tan">$CZ • BNB Smart Chain</p>
+          </div>
+        </div>
+        <p class="max-w-md font-cat text-sm text-fur-tan">
+          CATZ is a meme token for entertainment. Always verify the contract and do your own
+          research before you pounce.
+        </p>
+        <a
+          href="https://x.com/CATZbsc"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex h-12 w-12 items-center justify-center rounded-full bg-fur-cream"
+        >
+          <img src="x.png" alt="X" class="h-6 w-6 object-contain" />
+        </a>
+      </div>
+    </footer>
+
+    <div
+      id="toast"
+      class="pointer-events-none fixed bottom-6 left-1/2 z-[60] -translate-x-1/2 rounded-full bg-binance-black px-5 py-3 font-cat font-bold text-binance-yellow opacity-0 shadow-glow transition"
+    >
+      CA copied. Now go pounce.
+    </div>
+
+    <script>
+      const CA = "TBA";
+      const toast = document.getElementById("toast");
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      async function copyCA() {
+        try {
+          await navigator.clipboard.writeText(CA);
+        } catch (err) {
+          const area = document.createElement("textarea");
+          area.value = CA;
+          document.body.appendChild(area);
+          area.select();
+          document.execCommand("copy");
+          area.remove();
+        }
+        toast.classList.remove("opacity-0");
+        toast.classList.add("opacity-100");
+        setTimeout(() => {
+          toast.classList.add("opacity-0");
+          toast.classList.remove("opacity-100");
+        }, 1800);
+      }
+
+      document.getElementById("copyBtn").addEventListener("click", copyCA);
+      document.getElementById("copyBtn2").addEventListener("click", copyCA);
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      mobileMenu.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => mobileMenu.classList.add("hidden"));
+      });
+    </script>
+  </body>
+</html>
